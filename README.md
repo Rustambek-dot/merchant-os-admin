@@ -37,17 +37,20 @@ Supabase (schema + seed) → Vercel (env vars) → deploy. See [DEPLOYMENT.md](D
 ## License
 MIT
 
-## Screenshots
+## Как пользоваться (Usage guide)
 
-### Landing
+### 1. Лендинг
 ![Landing](screenshots/landing.png)
+Обзор админ-платформы. Вход: `demo@example.com / Demo123!`.
 
-### Orders
+### 2. Заказы
 ![Orders](screenshots/orders.png)
+Пайплайн статусов: кнопка **→ fulfilled** переводит заказ на следующий этап (new → paid → fulfilled → delivered). **Refund** возвращает оплату в один клик. Фильтры по статусу и поиск по номеру/клиенту.
 
-### Products
+### 3. Товары с вариантами
 ![Products](screenshots/products.png)
+Кликните товар — раскроются варианты (размер/цвет) с ценой и остатком по каждому SKU; ноль подсвечен красным. **Generate with AI** пишет описание товара из его характеристик.
 
-### Discounts
+### 4. Промокоды
 ![Discounts](screenshots/discounts.png)
-
+Создание кода (процент или фикс), лимит использований, живой прогресс-бар применений. **Disable** мгновенно отключает код.
